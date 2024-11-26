@@ -12,9 +12,10 @@ seleccion = st.sidebar.selectbox("Navegación", menu)
 if seleccion == "Página Principal":
     st.title("Asociación Latino-Americana de Química Medicinal")
     #st.image("ALAQMED1.PNG", caption="26/11/2025", use_column_width=True)
-    logo = Image.open("ALAQMED1.PNG")
-    logo_resized = logo.resize((300, 300))  # Cambia las dimensiones según lo necesites
-    st.image(logo_resized, caption="26/11/2025")
+    with st.container():
+    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+    st.image("ALAQMED1.PNG", caption="Logo Principal", width=300)
+    st.markdown("</div>", unsafe_allow_html=True)
 
     st.header("Misión")
     st.write("""
