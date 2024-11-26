@@ -10,7 +10,7 @@ seleccion = st.sidebar.selectbox("Navegación", menu)
 # Página Principal
 if seleccion == "Página Principal":
     st.title("Asociación Latino-Americana de Química Medicinal")
-    st.image("logo.png", caption="Logo Principal", use_column_width=True)
+    st.image("ALAQMED1.PNG", caption="Logo Principal", use_column_width=True)
     
     st.header("Misión")
     st.write("""
@@ -54,7 +54,7 @@ elif seleccion == "Convocatoria al Evento":
     st.subheader("Próximo Congreso de Química Medicinal")
     st.write("""
     **Fecha:** 20-22 de junio de 2025  
-    **Lugar:** Ciudad de México, México  
+    **Lugar:** Lima, Perú  
     **Condiciones para Participar:**  
     - Ser miembro activo de la Asociación.  
     - Enviar un resumen del trabajo antes del 15 de marzo de 2025.  
