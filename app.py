@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 # Configuración inicial
 st.set_page_config(page_title="Asociación Latino-Americana de Química Medicinal", layout="wide")
@@ -10,8 +11,11 @@ seleccion = st.sidebar.selectbox("Navegación", menu)
 # Página Principal
 if seleccion == "Página Principal":
     st.title("Asociación Latino-Americana de Química Medicinal")
-    st.image("ALAQMED1.PNG", caption="Logo Principal", use_column_width=True)
-    
+    #st.image("ALAQMED1.PNG", caption="26/11/2025", use_column_width=True)
+    logo = Image.open("ALAQMED1.PNG")
+    logo_resized = logo.resize((300, 300))  # Cambia las dimensiones según lo necesites
+    st.image(logo_resized, caption="26/11/2025")
+
     st.header("Misión")
     st.write("""
     Promover el desarrollo de la química medicinal en América Latina mediante la colaboración entre científicos, 
